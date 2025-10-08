@@ -1,0 +1,71 @@
+/* frontend/src/components/Header.css */
+
+.app-header {
+    background-color: #ffffff;
+    padding: 0 40px; /* Giữ padding để nội dung không bị sát lề */
+    display: flex;
+    align-items: center;
+    
+    /* THAY ĐỔI CHÍNH Ở ĐÂY */
+    justify-content: flex-start; /* Thay 'space-between' thành 'flex-start' */
+    gap: 60px; /* Tạo khoảng cách 60px giữa logo và cụm nav */
+  
+    height: 70px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .logo {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #007bff;
+    text-decoration: none;
+    /* không cần thay đổi */
+  }
+  
+  .app-header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px; /* Giữ khoảng cách giữa các link trong nav */
+  }
+  
+  .app-header nav a {
+    color: #555;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .app-header nav a:hover {
+    color: #007bff;
+  }
+  
+  /* Các style cho hiệu ứng active và hover giữ nguyên */
+  .app-header nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .app-header nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+  .app-header nav a.active {
+    color: #007bff;
+  }
+  
+  .app-header nav a.active::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

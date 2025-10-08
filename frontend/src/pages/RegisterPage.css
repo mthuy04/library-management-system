@@ -1,0 +1,60 @@
+/* frontend/src/pages/RegisterPage.css */
+
+.register-container {
+    display: flex;
+    flex-direction: column; /* <-- THÊM DÒNG NÀY */
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f4f7f6;
+    min-height: calc(100vh - 140px);
+  }
+  
+  .register-container form {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .register-container h2 {
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 24px;
+  }
+  
+  .register-container input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  }
+  
+  .register-container input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  .register-container button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Màu xanh lá cho nút đăng ký */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .register-container button:hover {
+    background-color: #218838;
+  }
